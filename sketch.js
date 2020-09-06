@@ -51,12 +51,13 @@ function draw() {
   if (gameState === 1) {
     score = score + Math.round(getFrameRate() / 60);
     sea.velocityX = -4;
-    if (keyDown("UP_ARROW")) {
-      dolphin.y = dolphin.y - 5;
-    }
-    if (keyDown("DOWN_ARROW")) {
-      dolphin.y = dolphin.y + 5;
-    }
+    // if (keyDown("UP_ARROW")) {
+    //   dolphin.y = dolphin.y - 5;
+    // }
+    // if (keyDown("DOWN_ARROW")) {
+    //   dolphin.y = dolphin.y + 5;
+    // }
+    dolphin.y = World.mouseY
     if (sea.x < 0) {
       sea.x = 500;
     }
