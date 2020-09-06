@@ -101,7 +101,8 @@ function draw() {
   strokeWeight(10)
   stroke("black")
   fill("white")
-  textSize(30); text("Score: " + score, 600, 50);
+  textSize(30); 
+  text("Score: " + score, windowWidth / 2, 50);
 }
 function spawnNets() {
   //write code here to spawn the nets
